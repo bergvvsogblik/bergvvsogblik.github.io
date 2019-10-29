@@ -1,7 +1,7 @@
 # BERG VVS OG BLIK
 
-Autoriseret VVS installatør
-* Skødstrup
+Autoriseret VVS installatør, Skødstrup
+
 * TLF: 3169 9550
 * Email: info@bergvvsogblik.dk
 * Facebook: https://www.facebook.com/bergvvsogblik.dk/
