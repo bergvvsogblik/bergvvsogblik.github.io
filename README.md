@@ -10,7 +10,7 @@
 ![Under construction](https://www.alliant.edu/wp-content/uploads/2016/09/Website-Under-Construction.jpg)
 
 <div id="logo">
-<a href="400dpiLogo.jpg" />
+  <a href="400dpiLogo.jpg"></a>
 </div>
 
 
