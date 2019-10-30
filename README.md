@@ -6,6 +6,8 @@ Autoriseret VVS installatør, Skødstrup
 * Email: info@bergvvsogblik.dk
 * Facebook: https://www.facebook.com/bergvvsogblik.dk/
 
+![LOGO](400dpiLogo.jpg)
+
 ![BERG VVS](image.png)
 
 # Om Matthijs
