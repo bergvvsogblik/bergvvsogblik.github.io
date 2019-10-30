@@ -3,7 +3,7 @@
     <li>Berg vvs og blik</li>
     <li>Autoriseret VVS installatør</li>
     <li>3169 9550</li>
-    <li>info@bergvvsogblik.dk</li>
+    <li><a mailto="info@bergvvsogblik.dk">info@bergvvsogblik.dk</a></li>
   </ul>
 </div>
 
