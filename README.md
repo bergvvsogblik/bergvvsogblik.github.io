@@ -17,3 +17,13 @@ Efter 16 år som selvstændig VVS og Blikkenslager i Holland med 5 ansatte, er j
 Det er vigtigt for mig at overholde aftaler, Jeg kommer til aftalt tid og har tilfredse kunder.
 
 Jeg har en bred erfaring, så kontakt mig endelig for information og muligheder for at jeg kan løse opgaver(ne)
+
+# Arbejdsområder
+
+* Sanitet
+* Tagpap
+* Afløb
+* Gas og vand
+* Blødgøringsanlæg
+* Varme
+
