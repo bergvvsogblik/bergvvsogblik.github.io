@@ -1,9 +1,9 @@
 <div id="businesscard">
   <ul>
-  <li>Berg vvs og blik
-  <li>Autoriseret VVS installatør
-  <li>3169 9550
-  <li>info@bergvvsogblik.dk
+    <li>Berg vvs og blik</li>
+    <li>Autoriseret VVS installatør</li>
+    <li>3169 9550</li>
+    <li>info@bergvvsogblik.dk</li>
   </ul>
 </div>
 
