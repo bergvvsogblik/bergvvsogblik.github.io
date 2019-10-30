@@ -6,6 +6,8 @@ Autoriseret VVS installatør, Skødstrup
 * Email: info@bergvvsogblik.dk
 * Facebook: https://www.facebook.com/bergvvsogblik.dk/
 
+![Under construction](https://www.alliant.edu/wp-content/uploads/2016/09/Website-Under-Construction.jpg)
+
 ![LOGO](400dpiLogo.jpg)
 
 ![BERG VVS](image.png)
