@@ -6,6 +6,8 @@ Autoriseret VVS installatør, Skødstrup
 * Email: info@bergvvsogblik.dk
 * Facebook: https://www.facebook.com/bergvvsogblik.dk/
 
+![BERG VVS](image.png)
+
 # Om Matthijs
 
 Efter 16 år som selvstændig VVS og Blikkenslager i Holland med 5 ansatte, er jeg nu flyttet til Danmark med min danske kæreste og vores to børn.  Vi har bosat os i Løgten nord for Århus, hvor jeg startede Berg VVS og Blik op i september 2019.
