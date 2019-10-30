@@ -1,8 +1,9 @@
 <div id="businesscard">
-* Berg vvs og blik
-* Autoriseret VVS installatør
-* 3169 9550
-* info@bergvvsogblik.dk
+  <ul>
+  <li>Berg vvs og blik
+  <li>Autoriseret VVS installatør
+  <li>3169 9550
+  <li>info@bergvvsogblik.dk
 </div>
 
 ![Under construction](https://www.alliant.edu/wp-content/uploads/2016/09/Website-Under-Construction.jpg)
