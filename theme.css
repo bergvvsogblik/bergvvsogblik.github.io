@@ -27,15 +27,19 @@ div.center {
 	margin: auto;
 }
 
-div.businesscard {
+div.businesscardfloat {
 	transform: rotate(-15deg);
 	box-shadow: 00px 0px 3px 3px white;
-	vertical-align: bottom;
 	float: right;
 	padding: 1em 1ex;
 	background: #2e3842;
 	color: #bdc9dd;
-	margin-right: 2em;
+	margin: -1em 1ex -2em 0ex;
+}
+
+div.businesscard {
+	width: 17em;
+	white-space: nowrap;
 }
 div.businesscard > img {
 	float: left;
@@ -46,7 +50,6 @@ div.businesscard > ul {
   padding: .2em;
 }
 div.businesscard > ul > li {
-	white-space: nowrap;
 	list-style: none;
 }
 div.businesscard > ul > li:first-child {
