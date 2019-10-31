@@ -6,21 +6,31 @@ purple: #35439c
 dark: #2e3842
 */
 
+p {
+	margin: 0ex .2em 1ex .2em;
+}
+
+div.worklist {
+  margin: .2ex 10% .2ex 10%;
+  column-width: 17ex;
+  width: auto;
+  min-width: 17ex;
+}
 div.worklist > ul {
-  display: table;
-  width: 80%;
-  padding-left: 10%;
+  padding: 0ex 0em 0ex 1em;
+  margin: 0ex 0em 0ex 0em;
+  display: block;
 }
 
 div.worklist > ul > li {
-  display: table-cell;
-  padding: .2ex .2em;
+  display: block;
+  padding: .2ex .2em .2ex .2em;
   border-left: .2em solid white;
-  margin: 1em;
-  word-break: keep-all;
-  text-align: center;
+  margin: .2ex auto .2ex auto;
+  word-break: normal;
   background: #2e3842;
   color: #bdc9dd;
+  max-width: 17em;
 }
 
 div.center {
@@ -28,13 +38,14 @@ div.center {
 }
 
 div.businesscardfloat {
-	transform: rotate(-15deg);
-	box-shadow: 00px 0px 3px 3px white;
 	float: right;
+	transform: rotate(-5deg);
+	overflow: visible;
+	box-shadow: 00px 0px 3px 3px white;
 	padding: 1em 1ex;
 	background: #2e3842;
 	color: #bdc9dd;
-	margin: -1em 1ex -2em 0ex;
+	margin: 0em 1ex -5em 0ex;
 }
 
 div.businesscard {
@@ -45,7 +56,7 @@ div.businesscard > img {
 	float: left;
 }
 div.businesscard > ul {
-	float: left;
+  float: left;
   margin: .2em;
   padding: .2em;
 }
@@ -54,6 +65,16 @@ div.businesscard > ul > li {
 }
 div.businesscard > ul > li:first-child {
 	font-style: italic;
+}
+
+div.about {
+	column-width: 30ex;
+}
+
+.footer {
+	font-size: 80%;
+	background: #2e3842;
+	color: #bdc9dd;
 }
 
 .pagelinks { font-size: small; float: left; width: 100%; border-bottom: 3px solid #c8b5a6; }
@@ -75,6 +96,7 @@ body {
     font-family: tahoma, helvetica, sans-serif;
     background: white;
     color: #2e3842;
+	margin: 0px;
 }
 
 h1 { 
