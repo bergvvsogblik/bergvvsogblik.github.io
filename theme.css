@@ -44,6 +44,7 @@ ul.worklist > li {
     border: solid thin #111;
     border-top-width: thick;
     border-top-color: #333;
+    background-color: rgba(0,0,0,.5);
 }
 
 ul.worklist > li:hover {
@@ -129,10 +130,12 @@ a:hover {
 
 body {
     font-family: tahoma, helvetica, sans-serif;
-    background: black;
+    /* background: black; */
     color: white;
-	margin: 0px;
-	
+    margin: 0px;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-color: black;
 }
 
 h1 { 
