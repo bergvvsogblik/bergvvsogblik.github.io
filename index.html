@@ -1,86 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html version="-//W3C//DTD XHTML 1.1//EN"
-      xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.w3.org/1999/xhtml
-                          http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd"
->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<link rel="stylesheet" type="text/css" href="theme.css" />
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<title>Berg vvs og blik</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Berg VVS og Blik: VVS Blikkenslager Blødgøringsanlæg">
+	<script>
+		function hookup_pages() {
+			var active = 'active';
+			function hookup_page(page, targets) {
+			    var target = page.target;
+				page.origin.onclick = function() { 
+					targets.forEach((n) => {
+					  var t = n.target;
+					  if (!(t === target)) {
+					      t.classList.remove(active);
+				      }
+					});
+					target.classList.add(active);
+				};
+			}
+			function find_page_info(n) {
+				return {
+					"origin": n,
+					"target": document.getElementById(n.getAttribute("ref"))
+					};
+			}
+			var nodes = Array.from(document.querySelectorAll("ul.worklist > li"))
+				.map(find_page_info);
+			nodes.forEach((n) => hookup_page(n, nodes));
+		};
+		function loaded() {
+			hookup_pages();
+		};
+	</script>
+    <title>Berg VVS og Blik</title>
+    <link rel="stylesheet" type="text/css" href="theme.css" type="text/css">
+  </head>
 
-</head>
+<body onload="loaded()">
 
-<body>
-
-<div class=foo></div>
-
-
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/da_DK/sdk.js#xfbml=1&version=v5.0"></script>
-
-<h1 id="title">Berg vvs og blik <img src="berg_logo_flame.png" /></h1>
-
-<div class="worklist">
-	<ul>
-		<li>Sanitet</li>
-		<li>Afløb</li>
-		<li>Gas og vand</li>
-		<li>Varme</li>
-		<li>Tagpap</li>
-		<li>Blødgøringsanlæg</li>
-	</ul>
+<div class=".hr">
+<p class="head">Ring <a href="tel:+45 3169 9550">3169 9550</a> | <a href="mailto:info@bergvvsogblik.dk">&lt;info@bergvvsogblik.dk&gt;</a></p>
+<ul class="worklist">
+	<img src="berg_logo_flame.png" style="width: 2em" >
+	<li ref="page:Forside">Forside
+	<li ref="page:VVS">VVS
+	<li ref="page:Tagpap">Tagpap
+	<li ref="page:Blikarbejde">Blikarbejde
+</ul>
 </div>
 
-<div class=businesscardfloat>
-			<div class="businesscard">
-			  <img src="berg_logo_flame.png" style="height: 12ex" />
-			  <ul class=card>
-				<li>Matthijs Van den Berg</li>
-				<li>Berg vvs og blik</li>
-				<li>Autoriseret VVS installatør</li>
-				<li>3169 9550</li>
-				<li><a href="mailto:info@bergvvsogblik.dk">info@bergvvsogblik.dk</a></li>
-			  </ul>
-			</div>
-</div>
-
-<div class=center style="width: 370px">
-<img src="berg_car.png"></a>
-<div 
-	class="fb-page" 
-	data-href="https://www.facebook.com/bergvvsogblik.dk/" 
-	data-tabs="timeline, messages" 
-	data-width="370" 
-	data-height="370" 
-	data-small-header="true" 
-	data-adapt-container-width="true" 
-	data-hide-cover="true" 
-	data-show-facepile="false">
-	<blockquote cite="https://www.facebook.com/bergvvsogblik.dk/" class="fb-xfbml-parse-ignore">
-	<a href="https://www.facebook.com/bergvvsogblik.dk/">Facebook</a>
-	</blockquote>
-</div>
-</div>
-
-
-
-
-
-<div class=footer>
-<h2>Om Matthijs</h2>
-
-<div class="about">
-<p>Efter 16 år som selvstændig VVS og Blikkenslager i Holland med 5 ansatte, er jeg nu flyttet til Danmark med min danske kæreste og vores to børn.  Vi har bosat os i Løgten nord for Århus, hvor jeg startede Berg VVS og Blik op i september 2018.
-
-<p>Det er vigtigt for mig at overholde aftaler, Jeg kommer til aftalt tid og har tilfredse kunder.
-
-<p>Jeg har en bred erfaring, så kontakt mig endelig for information og muligheder for at jeg kan løse opgaver(ne)
-</div>
+<div class="pages">
+	<div id="page:Forside" class="active">
+		<img class="hr" src="berg_car.png"></a>
+		<p> Berg VVS og blik er din lokale autoriserede installatør i Skødstrup. Vi har 20 års erfaring med konstruktion og VVS service.
+		<p> Berg VVS og blik arbejder hovedsageligt for private kunder, ejerforeninger samt små- og mellemstore virksomheder.
+	</div>
+	<div id="page:VVS">
+		<p>Det arbejde vi udfører er konstruktion og vedligeholdelse, Gasinstallationer, badeværelse renovering, gulvvarme, køkkenrenovering og blødgøringsmidler.
+		<p>Vi er også 7 dage om uge opnåelige i nødsituationers
+	</div>
+	<div id="page:Tagpap">Tagpap
+		<p>Du får et tæt tag med Berg VVS og blik
+	</div>
+	<div id="page:Blikarbejde">Blikarbejde
+		<p>Få et holdbart og præsentabelt resultat med Berg VVS og Blik
+	</div>
+	<div id="page:Kontakt">
+		<div class=businesscardfloat>
+					<div class="businesscard">
+					  <img src="berg_logo_flame.png" style="height: 12ex" />
+					  <ul class=card>
+						<li>Matthijs Van den Berg</li>
+						<li>Berg vvs og blik</li>
+						<li>Autoriseret VVS installatør</li>
+						<li>3169 9550</li>
+						<li><a href="mailto:info@bergvvsogblik.dk">info@bergvvsogblik.dk</a></li>
+					  </ul>
+					</div>
+		</div>
+	</div>
 </div>
 
 </body>

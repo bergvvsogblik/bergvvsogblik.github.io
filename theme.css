@@ -6,29 +6,70 @@ purple: #35439c
 dark: #2e3842
 */
 
+.hr {
+	width: 100%;
+}
+
+p.head {
+    text-align: right;
+    margin: .2em .2em;
+}
+
 p {
 	margin: 0ex .2em 1ex .2em;
 }
 
-div.worklist {
-  margin: .2ex 10% .2ex 10%;
-  column-width: 17ex;
-  width: auto;
-}
-div.worklist > ul {
-  padding: 0ex 0em 0ex 1em;
-  margin: 0ex 0em 0ex 0em;
-  display: block;
+ul.worklist > li {
+	display: inline-flex;
+	
 }
 
-div.worklist > ul > li {
-  display: block;
-  padding: .2ex .2em .2ex .2em;
-  border-left: .2em solid white;
-  margin: .2ex auto .2ex auto;
-  word-break: normal;
-  background: #2e3842;
-  color: #bdc9dd;
+ul.worklist {
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	width: 100%;
+	border: solid thin #ccc;
+	border-left-style: none;
+	border-right-style: none;
+	padding: 1em 0em;
+}
+
+ul.worklist > li {
+    display: inline-flex;
+    padding: 1.5em 1em;
+    margin: 0em .1em 0;
+    border: solid thin #111;
+    border-top-width: thick;
+    border-top-color: #333;
+}
+
+ul.worklist > li:hover {
+	border-top-color: #ccc;
+}
+
+
+
+div.pages {
+    min-width: 10em;
+    max-width: 30em;
+    width: unset;
+    display: flex;
+    align-items: center;
+    margin: 5%;
+    flex-direction: column;
+    flex-wrap: wrap;
+	margin: auto;
+}
+
+
+div.pages > div {
+	display: none;
+}
+div.pages > div.active {
+	display: inline-block;
 }
 
 div.center {
@@ -88,9 +129,10 @@ a:hover {
 
 body {
     font-family: tahoma, helvetica, sans-serif;
-    background: white;
-    color: #2e3842;
+    background: black;
+    color: white;
 	margin: 0px;
+	
 }
 
 h1 { 
@@ -98,7 +140,7 @@ h1 {
     text-align: center;
     font-size: 300%; 
     color: #51baea; 
-	background: #2e3842;
+	background: black;
     padding: .2ex 0em .2ex 0em;
     margin: 0ex 0em 0ex 0em;
     clear: both;
