@@ -4,13 +4,31 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Berg VVS og Blik: VVS Blikkenslager Blødgøringsanlæg">
+    <title>Berg VVS og Blik</title>
+    <link rel="stylesheet" type="text/css" href="theme.css" type="text/css">
+  </head>
+
+<body onload="loaded()">
+    <script>
+	// Fill missing behaviour
+	if (Array.from === undefined) {
+		Array.from = function (src) {
+			var a = [],
+			l = src.length;
+			for (var i = 0; i < l; i++) {
+				a.push(src[i]);
+			}
+			return a;
+		}
+	}
+	</script>
 	<script>
 		function hookup_pages() {
 			var active = 'active';
 			function hookup_page(page, targets) {
 			    var target = page.target;
 				page.origin.onclick = function() { 
-					targets.forEach((n) => {
+					targets.forEach(function (n) {
 					  var t = n.target;
 					  if (!(t === target)) {
 					      t.classList.remove(active);
@@ -27,17 +45,15 @@
 			}
 			var nodes = Array.from(document.querySelectorAll("ul.worklist > li"))
 				.map(find_page_info);
-			nodes.forEach((n) => hookup_page(n, nodes));
+			function _f1(n) {
+				hookup_page(n, nodes);
+			}
+			nodes.forEach(_f1);
 		};
 		function loaded() {
 			hookup_pages();
 		};
 	</script>
-    <title>Berg VVS og Blik</title>
-    <link rel="stylesheet" type="text/css" href="theme.css" type="text/css">
-  </head>
-
-<body onload="loaded()">
 
 <div class=".hr">
 <p class="head">Ring <a href="tel:+45 3169 9550">3169 9550</a> | <a href="mailto:info@bergvvsogblik.dk">&lt;info@bergvvsogblik.dk&gt;</a></p>
