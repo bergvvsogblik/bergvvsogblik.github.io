@@ -23,18 +23,22 @@
 	}
 	</script>
 	<script>
+		function except(xs, x) {
+			xs
+		}
 		function hookup_pages() {
 			var active = 'active';
+			
 			function hookup_page(page, targets) {
 			    var target = page.target;
-				page.origin.onclick = function() { 
-					targets.forEach(function (n) {
-					  var t = n.target;
-					  if (!(t === target)) {
-					      t.classList.remove(active);
-				      }
-					});
+				var origin = page.origin;
+				var unsetTargets = targets.map(function(x) { return x.target; }).filter(function (x) { return !(x === target); });
+				var unsetOrigins = targets.map(function(x) { return x.origin; }).filter(function (x) { return !(x === origin); });
+				var unset = unsetTargets.concat(unsetOrigins);
+				origin.onclick = function() { 
+					unset.forEach(function (x) { x.classList.remove(active); });
 					target.classList.add(active);
+					origin.classList.add(active);
 				};
 			}
 			function find_page_info(n) {
@@ -58,8 +62,8 @@
 <div class=".hr">
 <p class="head">Ring <a href="tel:+45 3169 9550">3169 9550</a> | <a href="mailto:info@bergvvsogblik.dk">&lt;info@bergvvsogblik.dk&gt;</a></p>
 <ul class="worklist">
-	<img src="berg_logo_flame.png" style="width: 2em" >
-	<li ref="page:Forside">Forside
+	<img src="berg_logo_flame.png" style="height: 4em" >
+	<li ref="page:Forside" class="active">Forside
 	<li ref="page:VVS">VVS
 	<li ref="page:Tagpap">Tagpap
 	<li ref="page:Blikarbejde">Blikarbejde
@@ -69,8 +73,8 @@
 
 <div class="pages">
 	<div id="page:Forside" class="active">
-		<img class="hr" src="berg_car.png">
 		<p> Berg vvs og blik er din lokale autoriserede installatør i Skødstrup. Vi har 20 års erfaring med konstruktion og VVS service.
+		<img class="hr" src="berg_car.png">
 		<p> Berg vvs og blik arbejder hovedsageligt for private kunder, ejerforeninger samt små- og mellemstore virksomheder.
 	</div>
 	<div id="page:VVS">
