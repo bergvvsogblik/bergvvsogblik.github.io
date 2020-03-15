@@ -19,9 +19,21 @@ p {
 	margin: 0ex .2em 1ex .2em;
 }
 
-ul.worklist > li {
-	display: inline-flex;
-	
+div.gallery {
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.gallery > img {
+	width: 15em;
+	min-width: 100px;
+	padding: .4em;
+	margin: .4em;
+	box-shadow: 0px 0px 8px 0px;
+	color:  black;
+	background: #ffffff2e;
 }
 
 ul.worklist {
@@ -38,6 +50,8 @@ ul.worklist {
 }
 
 ul.worklist > li {
+	flex: 1;
+	max-width: 6em;
     display: inline-flex;
     padding: 1.5em 1em;
     margin: 0em .1em 0;
@@ -55,22 +69,22 @@ ul.worklist > li:hover {
 
 div.pages {
     min-width: 10em;
-    max-width: 30em;
-    width: unset;
-    display: flex;
-    align-items: center;
-    margin: 5%;
-    flex-direction: column;
-    flex-wrap: wrap;
-	margin: auto;
+    margin: auto;
 }
 
 
 div.pages > div {
 	display: none;
 }
+
+div.pages p {
+	max-width: 30em;
+}
+
 div.pages > div.active {
-	display: inline-block;
+    align-items: center;
+	display: flex;
+	flex-direction: column;
 }
 
 div.center {
@@ -81,12 +95,12 @@ div.businesscardfloat {
 	float: right;
 	transform: rotate(-5deg);
 	overflow: visible;
-	box-shadow: 00px 0px 3px 3px white;
+	/* box-shadow: 00px 0px 3px 3px white; */
 	padding: 1em 1ex;
 	background: #2e3842;
 	color: #bdc9dd;
 	margin: 0em 1ex -5em 0ex;
-  animation: rotatecard 0.3s normal forwards ease-in-out;
+	animation: rotatecard 0.3s normal forwards ease-in-out;
 }
 @keyframes rotatecard {
   100%  { transform: rotate(0deg);}
