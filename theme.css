@@ -1,3 +1,11 @@
+
+
+@font-face {
+	font-family: "TragicMarker"; 
+	src: url("font/TragicMarker.eot");
+	src: url("font/TragicMarker.woff") format("woff")
+	;
+}
 /*
 light: #51baea
 red: #eb1e23
