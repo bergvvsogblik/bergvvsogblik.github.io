@@ -27,6 +27,10 @@ p {
 	margin: 0ex .2em 1ex .2em;
 }
 
+img {
+	margin: 1em 0em;	
+}
+
 div.gallery {
     display: flex;
     flex-flow: row;
