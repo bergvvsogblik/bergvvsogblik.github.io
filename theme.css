@@ -53,6 +53,7 @@ div.gallery > img {
 
 ul.worklist {
     display: flex;
+    clear: none;
     flex-flow: row;
     flex-direction: row;
     flex-wrap: wrap;
@@ -60,18 +61,22 @@ ul.worklist {
     width: 100%;
     border: solid thin #ccc;
     border-left-style: none;
+    border-top-style: none;
     border-right-style: none;
     padding: 1em 0em;
     text-align: center;
     font-size: 130%;
+    margin-block-start: unset;
+    margin-block-end: unset;
 }
 
 ul.worklist > li {
-	flex: 1;
+	/* flex: 1; */
 	max-width: 6em;
-	display: inline;
-	padding: 1em 0em;
-	margin: 0em .1em;
+	/* width: 6em; */
+	display: block;
+	padding: .1em .1em .2em .1em;
+	margin: .2em .1em;
 	border: solid thin #333;
 	border-top-width: thick;
 	border-top-color: #333;
@@ -94,7 +99,7 @@ ul.worklist > *.active {
 
 div.pages {
     min-width: 10em;
-    margin: auto;
+    margin: .5em;
 }
 
 
