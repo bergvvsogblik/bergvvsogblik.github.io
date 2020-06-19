@@ -1,1 +1,5 @@
-*.html	ident export_subst
+[attr]tx    text ident export-subst
+
+*.html	tx
+*.css   tx
+

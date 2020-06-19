@@ -230,6 +230,10 @@ a:hover {
 	opacity: .5;
 	position: fixed;
 	bottom: 0%;
-	right: 0%;
+	elft: 0%;
 	color: gray;
+}
+
+#git-id::after {
+	content: " theme.css=$Id$"
 }
