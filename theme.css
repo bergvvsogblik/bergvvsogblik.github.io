@@ -225,4 +225,11 @@ a:hover {
     display: none;
 }
 
-
+#git-id {
+	font-size: 50%;
+	opacity: .5;
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+	color: gray;
+}
